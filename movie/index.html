@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Playlist App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Movie Playlist App</h1>
+
+    <!-- User Registration Form -->
+    <div id="registerForm">
+      <h2>Register</h2>
+      <input type="text" id="registerUsername" placeholder="Username">
+      <input type="password" id="registerPassword" placeholder="Password">
+      <button onclick="registerUser()">Register</button>
+    </div>
+
+
+    <!-- Login Form -->
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="loginUser()">Login</button>
+    </div>
+
+    <!-- Search Movie -->
+    <div>
+      <input type="text" id="movieTitle" placeholder="Enter a movie title">
+      <button onclick="searchMovies()">Search</button>
+    </div>
+    <div id="searchResults">
+      <!-- Search results will be displayed here -->
+    </div>
+
+    <!-- Public Playlist Creation Form -->
+    <div id="publicPlaylistForm">
+      <h2>Create a Public Playlist</h2>
+      <input type="text" id="publicPlaylistName" placeholder="Playlist Name">
+      <button onclick="createPublicPlaylist()">Create Public Playlist</button>
+    </div>
+
+    
+
+    <!-- Playlist Creation Form -->
+    <div id="playlistForm">
+      <h2>Create a Private Playlist</h2>
+      <input type="text" id="privatePlaylistName" placeholder="Playlist Name">
+      <button onclick="createPrivatePlaylist()">Create Private Playlist</button>
+    </div>
+
+    <!-- Playlist Selection and Add Movie Form -->
+    <div id="addMovieForm">
+      <h2>Add Movie to Playlist</h2>
+      <select id="playlistSelect">
+        <!-- Playlist options will be dynamically populated -->
+      </select>
+      <input type="text" id="movieName" placeholder="Movie Name">
+      <input type="text" id="moviePoster" placeholder="Movie Poster URL">
+      <button onclick="addMovieToPlaylist()">Add Movie</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
